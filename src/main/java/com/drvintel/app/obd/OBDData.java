@@ -15,42 +15,42 @@ public class OBDData {
 	@EmbeddedId
 	private OBDDataPK obdDevicePK;
 	@Column
-	private String Veh_Cal_Eng_Load;
+	private String engineLoad;
 	@Column
-	private String Veh_Eng_Coolant_Temp;
+	private String coolantTemp;
 	@Column
-	private String Veh_Short_Term_Fuel_Trim_Bank_1;
+	private String shortTermFuelTrimBank1;
 	@Column
-	private String Veh_Long_Term_Fuel_Trim_Bank_1;
+	private String longTermFuelTrimBank1;
 	@Column
-	private String Veh_Short_Term_Fuel_Trim_Bank_2;
+	private String shortTermFuelTrimBank2;
 	@Column
-	private String Veh_Engine_RPM;
+	private String engineRPM;
 	@Column
-	private String Veh_Speed;
+	private String speed;
 	@Column
-	private String Veh_Intake_Air_Temp;
+	private String intakeAirTemp;
 	@Column
-	private String Veh_Throttle_Position;
+	private String throttlePosition;
 	@Column
-	private String Veh_Fuel_Tank_Level_Input;
+	private String fuelTankLevelInput;
 	@Column
-	private String Veh_Dist_Trav_Since_Cod_Cleared;
+	private String distTravSinceCodCleared;
 	@Column
-	private String Veh_Rela_Throt_Pos;
+	private String relaThrotPos;
 	@Column
-	private String Veh_Amb_Air_Temp;
+	private String ambAirTemp;
 	@Column
-	private String Veh_Abs_Throt_Pos_B;
+	private String absThrotPosB;
 	@Column
-	private String Veh_Abs_Throt_Pos_C;
+	private String absThrotPosC;
 	@Column
-	private String Veh_Abs_Throt_Pos_D;
+	private String absThrotPosD;
 	@Column
-	private String Veh_Abs_Throt_Pos_E;
+	private String absThrotPosE;
 	@Column
-	private String Veh_Abs_Throt_Pos_F;
+	private String absThrotPosF;
 	@Column
-	private String Veh_Fuel_Type; 
+	private String fuelType; 
 
 }
