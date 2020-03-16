@@ -19,11 +19,11 @@ public class OBDData {
 	@Column
 	private String coolantTemp;
 	@Column
-	private String shortTermFuelTrimBank1;
+	private String sFuelTrimOne;
 	@Column
-	private String longTermFuelTrimBank1;
+	private String lFuelTrimOne;
 	@Column
-	private String shortTermFuelTrimBank2;
+	private String sFuelTrimTwo;
 	@Column
 	private String engineRPM;
 	@Column
@@ -31,11 +31,11 @@ public class OBDData {
 	@Column
 	private String intakeAirTemp;
 	@Column
-	private String throttlePosition;
+	private String throtPosition;
 	@Column
-	private String fuelTankLevelInput;
+	private String fuelTLevelInp;
 	@Column
-	private String distTravSinceCodCleared;
+	private String dTravCodClear;
 	@Column
 	private String relaThrotPos;
 	@Column
