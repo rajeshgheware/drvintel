@@ -27,7 +27,7 @@ public class OBDController {
 		
 		
 		if(data == "") {
-			//long LastDataInDatabase = obd.getObdDevicePK().getReceived().getTime();
+			
 			String LastRecord= repo.getLastRecord().toString();
 			String data2 = "RIS="+LastRecord+"12345";	
 			return new ResponseEntity<String>(data2, HttpStatus.OK);
@@ -41,7 +41,7 @@ public class OBDController {
 			if(data.length()<25) 
 			{			
 
-				//RIS=*240320145928<'.12345.'>
+				
 				String data2 = "RIS="+time+"ERROR"+ strTemp +"12345";	
 				return new ResponseEntity<String>(data2, HttpStatus.OK);
 			}
@@ -49,10 +49,7 @@ public class OBDController {
 			{
 				return new ResponseEntity<String>(data1, HttpStatus.OK);
 			}
-		}
-		
-
-		
+		}	
 	}
 
 	private OBDData parse(String input) {
@@ -72,19 +69,7 @@ public class OBDController {
         }
 		log.info(String.format("Comma Count: %s", nCommaCount));
 		
-		/*
-		if length != RequiredLength 
-		{
-			OBDData InvalidData = new OBDData();
-			Store InvalidData in the Database alternate record as the data was not correct - We dont want to discard the data 
-			
-			String data2 = "RIS=ERROR%03d", length;	// We dont want to display the standard error message of the page as hardware will not be able to understand the response
-			return new ResponseEntity<String>(data2, HttpStatus.OK);
-		}
 		
-		
-		
-		*/
 		String packet[] = input.split(",");
 		OBDDataPK pk=new OBDDataPK();
 		pk.setVehicleID("Ayush1 Car");
@@ -99,12 +84,6 @@ public class OBDController {
 		}
 		else
 		{
-			/*String packet[] = input.split(",");
-			OBDDataPK pk=new OBDDataPK();
-			pk.setVehicleID("Ayush1 Car");
-			pk.setReceived(new Date());
-			OBDData data = new OBDData();
-			data.setObdDevicePK(pk);*/
 			int i = 0;
 			if(++i <= packet.length)data.setEngineLoad(packet[0]);
 			if(++i <= packet.length)data.setCoolantTemp(packet[1]);
