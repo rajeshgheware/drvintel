@@ -51,6 +51,18 @@ public class OBDData {
 	@Column
 	private String absThrotPosF;
 	@Column
-	private String fuelType; 
+	private String fuelType;
+	@Column String junk;
+	@Override
+	// This portion was added to reply back in Response RIS for the Data=NULL
+	public String toString() {
+		return  engineLoad + "," + coolantTemp
+				+ "," + sFuelTrimOne + "," + lFuelTrimOne + "," + sFuelTrimTwo
+				+ "," + engineRPM + "," + speed + "," + intakeAirTemp
+				+ "," + throtPosition + "," + fuelTLevelInp + ","
+				+ dTravCodClear + "," + relaThrotPos + "," + ambAirTemp + ","
+				+ absThrotPosB + "," + absThrotPosC + "," + absThrotPosD + ","
+				+ absThrotPosE + "," + absThrotPosF + "," + fuelType+ ","+ junk ;
+	} 
 
 }
