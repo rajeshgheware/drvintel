@@ -8,6 +8,7 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
+/*import { LinechartComponent } from './pages/linechart/linechart.component';*/
 
 const routes: Routes = [
   {
@@ -47,6 +48,7 @@ const routes: Routes = [
   },
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
+  
 ];
 
 const config: ExtraOptions = {

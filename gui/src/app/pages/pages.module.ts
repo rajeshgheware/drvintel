@@ -5,6 +5,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
+import { LinechartComponent } from './linechart/linechart.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { PagesComponent } from './pages.component';
   ],
   declarations: [
     PagesComponent,
+    LinechartComponent,
   ],
 })
 export class PagesModule {

@@ -20,14 +20,17 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { LinechartComponent } from './pages/linechart/linechart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LinechartComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    ChartsModule,
 
     ThemeModule.forRoot(),
 
