@@ -5,8 +5,6 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
-import { LinechartComponent } from './linechart/linechart.component';
-
 
 @NgModule({
   imports: [
@@ -17,8 +15,7 @@ import { LinechartComponent } from './linechart/linechart.component';
     MiscellaneousModule,
   ],
   declarations: [
-    PagesComponent,
-    LinechartComponent,
+    PagesComponent
   ],
 })
 export class PagesModule {

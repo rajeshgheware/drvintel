@@ -4,6 +4,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { ThemeModule } from '../../@theme/theme.module';
 import { DashboardComponent } from './dashboard.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { LinechartsComponent } from './linecharts/linecharts.component';
 
 
 
@@ -24,7 +25,8 @@ import { ContactsComponent } from './contacts/contacts.component';
   ],
   declarations: [
     DashboardComponent,
-    ContactsComponent
+    ContactsComponent,
+    LinechartsComponent
   ],
 })
 export class DashboardModule { }

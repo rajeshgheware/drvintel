@@ -8,9 +8,10 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
-/*import { LinechartComponent } from './pages/linechart/linechart.component';*/
+import {LinechartsComponent} from './pages/dashboard/linecharts/linecharts.component';
 
 const routes: Routes = [
+  
   {
     path: 'pages',
     loadChildren: () => import('app/pages/pages.module')
@@ -46,9 +47,10 @@ const routes: Routes = [
       },
     ],
   },
+  /*{path: 'lines', component: LinechartsComponent},*/
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  /*{path: '', component: LinechartsComponent},*/
   { path: '**', redirectTo: 'pages' },
-  
 ];
 
 const config: ExtraOptions = {
