@@ -2,3 +2,5 @@ target/
 gui/node_modules/
 .aws/
 .settings
+.classpath
+.project
