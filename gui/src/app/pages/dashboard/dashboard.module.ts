@@ -5,6 +5,9 @@ import { ThemeModule } from '../../@theme/theme.module';
 import { DashboardComponent } from './dashboard.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LinechartsComponent } from './linecharts/linecharts.component';
+import { JsonfileComponent } from './jsonfile/jsonfile.component';
+import { LinechartsService }from './linecharts/linecharts.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,11 +25,14 @@ import { LinechartsComponent } from './linecharts/linecharts.component';
     NbIconModule,
     NbButtonModule,
     NgxEchartsModule,
+    HttpClientModule
   ],
   declarations: [
     DashboardComponent,
     ContactsComponent,
-    LinechartsComponent
+    LinechartsComponent,
+    JsonfileComponent
   ],
+  providers: [LinechartsService]
 })
 export class DashboardModule { }
