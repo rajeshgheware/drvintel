@@ -16,4 +16,7 @@ public class OBDDataPK implements Serializable{
 	private String vehicleID;
 	@Column
 	private Date received;
+	
+	
 }
+

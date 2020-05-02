@@ -14,45 +14,66 @@ public class OBDData {
 	
 	@EmbeddedId
 	private OBDDataPK obdDevicePK;
-	@Column
+	
+	@Column(name = "engineload")
 	private String engineLoad;
-	@Column
+	
+	@Column(name = "coolanttemp")
 	private String coolantTemp;
-	@Column
+	
+	@Column(name = "sfueltrimone")
 	private String sFuelTrimOne;
-	@Column
+	
+	@Column(name = "lfueltrimone")
 	private String lFuelTrimOne;
-	@Column
+	
+	@Column(name = "sfueltrimtwo")
 	private String sFuelTrimTwo;
-	@Column
+	
+	@Column(name = "enginerpm")
 	private String engineRPM;
-	@Column
+	
+	@Column(name = "speed")
 	private String speed;
-	@Column
+	
+	@Column(name = "intakeairtemp")
 	private String intakeAirTemp;
-	@Column
+	
+	@Column(name = "throtposition")
 	private String throtPosition;
-	@Column
+	
+	@Column(name = "fueltlevelinp")
 	private String fuelTLevelInp;
-	@Column
+	
+	@Column(name = "dtravcodclear")
 	private String dTravCodClear;
-	@Column
+	
+	@Column(name = "relathrotpos")
 	private String relaThrotPos;
-	@Column
+	
+	@Column(name = "ambairtemp")
 	private String ambAirTemp;
-	@Column
+	
+	@Column(name = "absthrotposb")
 	private String absThrotPosB;
-	@Column
+	
+	@Column(name = "absthrotposc")
 	private String absThrotPosC;
-	@Column
+	
+	@Column(name = "absthrotposd")
 	private String absThrotPosD;
-	@Column
+	
+	@Column(name = "absthrotpose")
 	private String absThrotPosE;
-	@Column
+	
+	@Column(name = "absthrotposf")
 	private String absThrotPosF;
-	@Column
+	
+	@Column(name = "fueltype")
 	private String fuelType;
-	@Column String junk;
+	
+	@Column(name = "junk")
+	String junk;
 	@Override
 	// This portion was added to reply back in Response RIS for the Data=NULL
 	public String toString() {
@@ -63,6 +84,9 @@ public class OBDData {
 				+ dTravCodClear + "," + relaThrotPos + "," + ambAirTemp + ","
 				+ absThrotPosB + "," + absThrotPosC + "," + absThrotPosD + ","
 				+ absThrotPosE + "," + absThrotPosF + "," + fuelType+ ","+ junk ;
-	} 
+	}
+	
+	
+	
 
 }

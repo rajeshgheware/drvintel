@@ -1,6 +1,8 @@
 package com.drvintel.app.obd;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,6 +10,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.drvintel.app.obd.OBDFetchData;
+import com.drvintel.app.obd.*;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -110,6 +115,20 @@ public class OBDController {
 		}
 		
 				return data;
+	}
+	
+	@Autowired
+	OBDFetchData obdfetchData;
+	
+	
+	@GetMapping(path = "getdata")
+	
+	public List<OBDData> getData(){
+		List<OBDData> obddata = new ArrayList<>(); 
+		
+	    obdfetchData.findAll()
+	    .forEach(obddata::add);
+	    return obddata;
 	}
 
 }
