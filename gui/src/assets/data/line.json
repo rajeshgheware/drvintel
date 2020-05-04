@@ -1,39 +1,39 @@
 [
 	{
 		"Location": "USA",
-		"Total cases": "1069534"
+		"Total_cases": "1069534"
 	},
 	{
 		"Location": "Spain",
-		"Total cases": "213435"
+		"Total_cases": "213435"
 	},
 	{
 		"Location": "Italy",
-		"Total cases": "205463"
+		"Total_cases": "205463"
 	},
 	{
 		"Location": "UK",
-		"Total cases": "171253"
+		"Total_cases": "171253"
 	},
 	{
 		"Location": "France",
-		"Total cases": "167299"
+		"Total_cases": "167299"
 	},
 	{
 		"Location": "Germany",
-		"Total cases": "159119"
+		"Total_cases": "159119"
 	},
 	{
 		"Location": "Turkey",
-		"Total cases": "120204"
+		"Total_cases": "120204"
 	},
 	{
 		"Location": "Russia",
-		"Total cases": "114431"
+		"Total_cases": "114431"
 	},
 	{
 		"Location": "Iran",
-		"Total cases": "94640"
+		"Total_cases": "94640"
 	},
 	{
 		"Location": "China",
@@ -41,11 +41,11 @@
 	},
 	{
 		"Location": "Brazil",
-		"Total cases": "78162"
+		"Total_cases": "78162"
 	},
 	{
 		"Location": "Canada",
-		"Total cases": "52056"
+		"Total_cases": "52056"
 	},
 	{
 		"Location": "Belgium",
