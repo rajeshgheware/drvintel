@@ -19,6 +19,7 @@ import { AuthGuard } from './auth-guard.service';
 import { GlobalErrorHandler } from './GlobalErrorHandler';
 import { RoleProvider } from './role.provider';
 import { TokenInterceptor } from './token.interceptor';
+import { ObdService } from './@core/service/obd.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -113,6 +114,7 @@ import { TokenInterceptor } from './token.interceptor';
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     { provide: NbRoleProvider, useClass: RoleProvider },
     { provide: ErrorHandler, useClass: GlobalErrorHandler },
+    ObdService,
   ],
 })
 export class AppModule {

@@ -10,12 +10,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Anlytics',
     icon: 'edit-2-outline',
-    link: '/pages/ui-features/projects',
+    link: '/pages/ui-features/speed-chart',
     children: [
       {
-        title: 'Speed',
+        title: 'Speed Chart',
         icon:'grid-outline',
-        link: '/pages/ui-features/projects',
+        link: '/pages/ui-features/speed-chart',
       },
     ],
   },

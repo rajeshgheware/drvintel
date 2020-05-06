@@ -3,9 +3,8 @@
  * Copyright Akveo. All Rights Reserved.
  * Licensed under the MIT License. See License.txt in the project root for license information.
  */
-import { Component, ChangeDetectorRef } from '@angular/core';
-import { NbLoginComponent, NbAuthService, NbAuthResult } from '@nebular/auth';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { NbAuthResult, NbLoginComponent } from '@nebular/auth';
 
 @Component({
   selector: 'ngx-login',
@@ -17,7 +16,7 @@ export class LoginComponent extends NbLoginComponent {
 
   login(): void {
     this.loading = true;
-    // console.log("authenticating...");
+    console.log("authenticating...");
     this.errors = [];
     this.messages = [];
     this.submitted = true;

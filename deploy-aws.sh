@@ -27,4 +27,4 @@ ssh -t -i ~/git/drvintel/.aws/drvintel.pem ubuntu@3.6.109.128  "docker load -i o
 echo 'stopping and removing container'
 ssh -t -i ~/git/drvintel/.aws/drvintel.pem ubuntu@3.6.109.128  "docker stop obd && docker rm obd"
 echo 'starting container using new image'
-ssh -t -i ~/git/drvintel/.aws/drvintel.pem ubuntu@3.6.109.128  "docker run --log-opt max-size=20m --log-opt max-file=5 -itd -p 80:80 --name obd --restart always  -v /tmp/obd:/tmp/obd/   -e java.security.egd=file:/dev/./urandom   -e server.port=80 drvintel/obd:0.0.1-SNAPSHOT"
+ssh -t -i ~/git/drvintel/.aws/drvintel.pem ubuntu@3.6.109.128  "docker run --log-opt max-size=20m --log-opt max-file=5 -itd -p 8080:8080 --name obd --restart always  -v /tmp/obd:/tmp/obd/   -e java.security.egd=file:/dev/./urandom -e spring.profiles.active=prod  -e server.port=8080 drvintel/obd:0.0.1-SNAPSHOT"
