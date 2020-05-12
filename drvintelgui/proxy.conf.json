@@ -1,18 +1,17 @@
 {
-  "/**": {
-    "target": {
-        "host": "localhost",
-        "protocol": "http:",
-        "port": 8080
-      },
-    "secure": false
+  "/getdata": {
+    "target": "http://3.6.109.128:8080/getdata",
+    "secure": false,
+    "pathRewrite": {
+      "^/getdata": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
   },
     "/ws/**": {
-    "target": {
-        "host": "localhost",
-        "protocol": "ws:",
-        "port": 8080
-      },
-    "secure": false
-  }
+      "target": "http://3.6.109.128:8080/getdata",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+      }
 }
