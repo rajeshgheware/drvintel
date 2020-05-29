@@ -22,5 +22,9 @@ https://towardsdatascience.com/how-to-apply-continual-learning-to-your-machine-l
 
 https://hub.packtpub.com/automl-build-machine-learning-pipeline-tutorial/
 
+7. Architecture for High-Throughput Low-Latency Big Data Pipeline on Cloud
+
+https://towardsdatascience.com/scalable-efficient-big-data-analytics-machine-learning-pipeline-architecture-on-cloud-4d59efc092b5
+
 
 
