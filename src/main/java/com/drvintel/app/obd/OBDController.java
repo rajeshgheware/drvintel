@@ -131,4 +131,18 @@ public class OBDController {
 	    return obddata;
 	}
 
+	
+	@Autowired
+	OBDFetchClusteredData obdfetchclusteredData;
+	
+	
+	@GetMapping(path = "getdata1")
+	
+	public List<ClusteredData> getData1(){
+		List<ClusteredData> clustereddata = new ArrayList<>(); 
+		
+	    obdfetchclusteredData.findAll()
+	    .forEach(clustereddata::add);
+	    return clustereddata;
+	}
 }
