@@ -6,7 +6,8 @@ import { UiFeaturesRoutingModule } from './ui-features-routing.module';
 import { UiFeaturesComponent } from './ui-features.component';
 import { SearchComponent } from './search-fields/search-fields.component';
 import { DashboardComponent }from './dashboard/dashboard.component';
-
+import { EnginePerformanceService } from './speed/speed.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const components = [
   UiFeaturesComponent,
@@ -24,7 +25,9 @@ const components = [
     NbAlertModule,
     ThemeModule,
     UiFeaturesRoutingModule,
+    HttpClientModule
   ],
+  providers: [EnginePerformanceService],
   declarations: [
     ...components,
   ],

@@ -50,7 +50,7 @@ import { ObdService } from './@core/service/obd.service';
           },
           baseEndpoint: '',
           login: {
-            // ...
+             //...
             endpoint: '/api/authenticate',
             method: 'post',
           },

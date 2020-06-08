@@ -21,7 +21,6 @@ export const routes: Routes = [
     path: 'auth',
     loadChildren: './auth/unigps-auth.module#AuthModule',
   },
-
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
 ];

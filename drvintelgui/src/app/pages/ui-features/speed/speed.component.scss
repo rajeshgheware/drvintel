@@ -1,56 +1,13 @@
-@import "../../../@theme/styles/themes";
-@import "~@nebular/theme/styles/global/typography/typography";
-
-@include nb-install-component() {
-  nb-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-  }
-
-  nb-card-body {
-    padding: 0;
-  }
-
-  [nbInput] {
-    margin-right: 0.75rem;
-    margin-bottom: 1rem;
-  }
-
-  .dropdown {
-    min-width: 7rem;
-    display: flex;
-  }
-
-  .dropdown-menu {
-    width: auto;
-  }
-  :host {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 40rem;
-  }
-
-  :host input {
-    width: 21.875rem;
-  }
-  .auto-complete {
-    min-width: 7rem;
-    display: flex;
-  }
-
-  .ng-valid[required],
-  .ng-valid.required {
-    border-left: 5px solid #42a948; /* green */
-  }
-
-  .ng-invalid:not(form) {
-    border-left: 5px solid #a94442; /* red */
-  }
-
+body {
+  margin: 0;
 }
-.example-tab-icon {
-  margin-right: 8px;
+
+.container {
+  height: 100vh;
+}
+
+.chart-wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
 }
