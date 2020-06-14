@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Driving Behaviour Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+     <form action="{{ url_for('result')}}"method="post">
+      <input type="text" name="ENGINE_POWER" placeholder="ENGINE_POWER" required="required" />btw:[0.0-2.0] 
+    	 <input type="text" name="ENGINE_COOLANT_TEMP" placeholder="ENGINE_COOLANT_TEMP" required="required" />btw:[0-200] 
+        <input type="text" name="ENGINE_LOAD" placeholder="ENGINE_LOAD" required="required" />btw:[0.000-1.000]
+		      <input type="text" name="ENGINE_RPM" placeholder="ENGINE_RPM" required="required" />btw:[0-4000] 
+            <input type="text" name="SPEED" placeholder="SPEED" required="required" />btw:[0-150] 
+              <input type="text" name="THROTTLE_POS" placeholder="THROTTLE_POS" required="required" />btw:[0.000-0.900] 
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
