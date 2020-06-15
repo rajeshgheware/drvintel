@@ -6,14 +6,16 @@ import { UiFeaturesRoutingModule } from './ui-features-routing.module';
 import { UiFeaturesComponent } from './ui-features.component';
 import { SearchComponent } from './search-fields/search-fields.component';
 import { DashboardComponent }from './dashboard/dashboard.component';
-import { EnginePerformanceService } from './speed/speed.service';
+import { EnginePerformanceService1 } from './lines/lines.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LinesComponent } from './lines/lines.component';
 
 const components = [
   UiFeaturesComponent,
   SpeedChartComponent,
   SearchComponent,
-  DashboardComponent
+  DashboardComponent,
+  LinesComponent
 ];
 
 @NgModule({
@@ -27,9 +29,10 @@ const components = [
     UiFeaturesRoutingModule,
     HttpClientModule
   ],
-  providers: [EnginePerformanceService],
+  providers: [EnginePerformanceService1],
   declarations: [
     ...components,
+    LinesComponent,
   ],
 })
 export class UiFeaturesModule { }

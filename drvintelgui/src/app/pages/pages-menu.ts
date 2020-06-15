@@ -13,9 +13,14 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/ui-features/speed-chart',
     children: [
       {
-        title: 'Speed Chart',
+        title: 'Pie Chart',
         icon:'grid-outline',
         link: '/pages/ui-features/speed-chart',
+      },
+      {
+        title: 'Line Chart',
+        icon:'grid-outline',
+        link: '/pages/ui-features/ngx-lines',
       },
     ],
   },

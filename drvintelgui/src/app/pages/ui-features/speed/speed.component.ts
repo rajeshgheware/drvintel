@@ -3,7 +3,6 @@ import { ObdService } from '../../../@core/service/obd.service';
 import { Chart } from 'chart.js';
 import 'rxjs/add/operator/map';
 import { HttpClient } from '@angular/common/http';
-
 export {};
 
 @Component({

@@ -4,6 +4,7 @@ import { SearchComponent } from './search-fields/search-fields.component';
 import { UiFeaturesComponent } from './ui-features.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SpeedChartComponent } from './speed/speed.component';
+import {LinesComponent} from './lines/lines.component';
 
 
 const routes: Routes = [{
@@ -19,6 +20,9 @@ const routes: Routes = [{
   }, {
     path: 'speed-chart',
     component: SpeedChartComponent,
+  },{
+    path: 'ngx-lines',
+    component: LinesComponent,
   }
   ],
 }];
