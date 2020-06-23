@@ -1,13 +1,31 @@
 
-import numpy as np
+import numpy as np, from flask_mysqldb import MySQL
 from flask import Flask, request, jsonify, render_template
 import pickle
+
 
 app = Flask(__name__)
 model = pickle.load(open('model1.pkl', 'rb'))
 
+# Configure db
+app.config['MYSQL_HOST'] = 'drvintel.cqw3h9hlecdi.ap-south-1.rds.amazonaws.com'
+app.config['MYSQL_USER'] = 'drvintel'
+app.config['MYSQL_PASSWORD'] = 'drvintel123'
+app.config['MYSQL_DB'] = 'drvintel'
+
+# mysql = MySQL(app)
+# cur = mysql.connection.cursor()
+# cur.execute("SELECT* FROM DataLake1")
+# Data = cur.fetchall()
+
 @app.route('/')
 def home():
+    mysql = MySQL(app)
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT* FROM DataLake1")
+    Data = cur.fetchall()
+    print(Data)
+
     return render_template('index1.html')
 
 
